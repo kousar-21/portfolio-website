@@ -1,12 +1,12 @@
 import React from 'react';
-import logoImage from '../../assets/Images/portfolio-Logo.png'
-import { NavLink } from 'react-router';
+import profileLogo from '../../assets/Images/portfolio-Logo.png'
+import { Link } from 'react-router';
 
 const Logo = () => {
     return (
         <div className='flex items-center gap-3'>
-            <NavLink to="/"><img className='size-16' src={logoImage} alt="Portfolio-Logo" /></NavLink>
-            <NavLink to="/"><h1 className='text-2xl font-bold'>Kousar</h1></NavLink>
+            <Link to='/'><img className='size-16 border-2 border-primary rounded-full' src={profileLogo} alt="Kousar Ahammed" /></Link>
+            <Link to='/'><h1 className='font-bold text-2xl'>Kousar</h1></Link>
         </div>
     );
 };
