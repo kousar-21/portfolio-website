@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
     return (
-        <section className='flex md:flex-row flex-col px-5 md:px-10 lg:px-20 py-12 bg-red-300'>
+        <section className='flex md:flex-row flex-col px-5 md:px-10 lg:px-20 py-12 bg-gray-700'>
             {/* Left Side */}
             <div className='flex-1'>
                 <div className='mb-5 md:text-start text-center font-bold'>
@@ -34,9 +34,9 @@ const Hero = () => {
                 </div>
                 {/* Buttons */}
                 <div className='flex justify-center md:justify-start gap-5'>
-                    <button className='btn btn-primary px-6'>Hire Me</button>
+                    <button className='btn btn-primary px-6 hover:bg-violet-900 hover:text-white'>Hire Me</button>
 
-                    <button className='btn btn-outline px-6'><ImDownload />Resume</button>
+                    <button className='btn btn-outline px-6 text-white hover:text-primary'><ImDownload />Resume</button>
                 </div>
             </div>
 

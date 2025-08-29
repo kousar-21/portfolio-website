@@ -38,7 +38,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-primary text-white border-none flex items-center">Resume <CgArrowTopRight size={16} /></a>
+                <a className="btn bg-primary text-white hover:bg-violet-900 hover:text-white border-none flex items-center">Resume <CgArrowTopRight size={16} /></a>
             </div>
         </div>
     );
