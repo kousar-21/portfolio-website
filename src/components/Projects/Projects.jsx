@@ -10,7 +10,7 @@ const Projects = () => {
         setProjects(projectsData);
     }, []);
     return (
-        <section className='px-5 md:px-10 lg:px-20 py-10'>
+        <section className='px-5 md:px-10 lg:px-20 py-10 bg-gray-400'>
             <h1 className='text-3xl md:text-4xl text-center font-bold mb-4'>My <span className='text-primary'>Projects</span></h1>
             <p className='text-center mb-7'>Some Of my Favorite Work</p>
             {/* projects */}
