@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "EduBridge-Online Tutor Booking Platform",
+    "image": "https://i.postimg.cc/5ytBwmfr/tutor.png",
+    "stack": ["React","Firebase", "Node.js", "Express", "MongoDB"],
+    "description": "A platform where students can find, review, and book tutors for various subjects and languages.",
+    "liveLink": "https://language-club-d421b.web.app/",
+    "githubClient": "https://github.com/kousar-21/edu-Bridge-client",
+    "challenges": "Implementing real-time booking calendar and handling timezone differences.",
+    "futurePlans": "Add AI tutor recommendations and support video conferencing."
+  },
+  {
+    "id": 2,
+    "name": "ScholarGateway-Scholarship Management System",
+    "image": "https://i.postimg.cc/pdDJxT0s/scholarship.png",
+    "stack": ["React","Firebase", "Node.js", "Express", "MongoDB", "Stripe"],
+    "description": "A complete solution for managing scholarships, applications, and reviews.",
+    "liveLink": "https://scholarship-web12.web.app/",
+    "githubClient": "https://github.com/kousar-21/scholar-Gateway-client",
+    "challenges": "Integrating secure payment gateway and role-based access control.",
+    "futurePlans": "Add AI-based scholarship matching and multi-language support."
+  },
+  {
+    "id": 3,
+    "name": "HobbyHeaven - Local Hobby Group Organizer",
+    "image": "https://i.postimg.cc/9QHBkZbD/Screenshot-2025-08-15-031112.png",
+    "stack": ["React", "Firebase", "TailwindCSS", "DaisyUI", "Swiper.js"],
+    "description": "A local hobby group organizer where users can discover, join, and create hobby-based communities like book clubs, hiking crews, and painting circles. Features include event scheduling, group management, and responsive design for all devices.",
+    "liveLink": "https://hobby-hub-app-1edcb.web.app/",
+    "githubClient": "https://github.com/kousar-21/hobby-Haven-client",
+    "challenges": "Implementing group membership logic, restricting joins after start dates, and ensuring responsive interactive UI with multiple animations.",
+    "futurePlans": "Add in-app chat for group members, advanced search with filters, and real-time event reminders."
+  }
+]
