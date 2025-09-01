@@ -8,8 +8,14 @@ import Projects from '../Projects/Projects';
 const Home = () => {
     return (
         <div>
-            <Hero></Hero>
-            <About></About>
+            <div className='bg-gray-700'>
+                <div className='flex flex-col justify-center min-h-[calc(100vh-80px)] md:min-h-[calc((100vh-80px)/2)] lg:min-h-[calc(100vh-80px)] '>
+                    <Hero></Hero>
+                </div>
+                <div className='flex flex-col justify-center min-h-[calc(100vh-80px)] md:min-h-[calc((100vh-80px)/2)] lg:min-h-[calc(100vh-80px)] ' >
+                    <About></About>
+                </div>
+            </div>
             <Skills></Skills>
             <Projects></Projects>
             <Contact></Contact>
