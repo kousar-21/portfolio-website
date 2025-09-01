@@ -8,7 +8,7 @@ import Projects from '../Projects/Projects';
 const Home = () => {
     return (
         <div>
-            <div className='bg-gray-700'>
+            <div className=''>
                 <div className='flex flex-col justify-center min-h-[calc(100vh-80px)] md:min-h-[calc((100vh-80px)/2)] lg:min-h-[calc(100vh-80px)] '>
                     <Hero></Hero>
                 </div>
