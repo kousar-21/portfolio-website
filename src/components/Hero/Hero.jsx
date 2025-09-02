@@ -3,12 +3,33 @@ import Image from "../../assets/Images/my-img4.png"
 import SocialIcon from '../socialIcon/SocialIcon';
 import { ImDownload } from "react-icons/im";
 import Typewriter from 'typewriter-effect';
+import Waves from '../../assets/Waves/Waves';
 
 
 const Hero = () => {
     return (
         <section>
-            <div className='flex md:flex-row flex-col px-5 md:px-10 lg:px-20 py-12 '>
+
+            {/* animation */}
+            <div className='bg-gray-600' style={{ width: '100%', height: '100vh', position: 'absolute', top: 0, left: 0, zIndex: -1, backgroundColor: '#374151'  }}>
+                <Waves
+                    lineColor="#fff"
+                    backgroundColor="rgba(55, 65, 81, 0.9)"
+                    waveSpeedX={0.02}
+                    waveSpeedY={0.01}
+                    waveAmpX={40}
+                    waveAmpY={20}
+                    friction={0.9}
+                    tension={0.01}
+                    maxCursorMove={120}
+                    xGap={12}
+                    yGap={36}
+                />
+            </div>
+
+
+
+            <div className='flex md:flex-row flex-col px-5 md:px-10 lg:px-20 py-12'>
 
                 {/* Left Side */}
                 <div className='flex-1'>
