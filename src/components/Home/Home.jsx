@@ -5,11 +5,14 @@ import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
 
+import ImageWaves from '../../assets/Images/background-1.jpg';
+
 const Home = () => {
     return (
         <div>
             <div className=''>
-                <div className='flex flex-col justify-center min-h-[calc(100vh-80px)] md:min-h-[calc((100vh-80px)/2)] lg:min-h-[calc(100vh-80px)] '>
+                <div className='flex flex-col justify-center min-h-[calc(100vh-80px)] md:min-h-[calc((100vh-80px)/2)] lg:min-h-[calc(100vh-80px)] h-screen w-full bg-cover bg-center'
+                    style={{ backgroundImage: `url(${ImageWaves})` }}>
                     <Hero></Hero>
                 </div>
                 <div className='flex flex-col justify-center min-h-[calc(100vh-80px)] md:min-h-[calc((100vh-80px)/2)] lg:min-h-[calc(100vh-80px)] ' >

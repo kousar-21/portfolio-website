@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer';
 import LinksIcon from '../../LinksIcon/LinksIcon';
 import { Outlet } from 'react-router';
 import VantaWavesSection from '../../Components/VantaWave/VantaWavesSection';
-import DotGrid from '../../Components/Animations/DotGrid';
+import DotGrid from '../../Components/Animations/DotGrid/DotGrid';
 
 const MainLayout = () => {
     return (
