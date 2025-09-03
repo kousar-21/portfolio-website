@@ -10,7 +10,7 @@ const Projects = () => {
         setProjects(projectsData);
     }, []);
     return (
-        <section className='px-5 md:px-10 lg:px-20 py-10 bg-gray-400'>
+        <section className='px-5 md:px-10 lg:px-20 py-10'>
             <h1 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-duration="1500"

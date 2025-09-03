@@ -4,18 +4,18 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <section className='px-5 md:px-10 lg:px-20 py-10 bg-gray-700'>
-            <h1 className='text-3xl md:text-4xl text-center font-bold mb-7'>Connect <span className='text-primary'>with Me</span></h1>
+        <section className='px-5 md:px-10 lg:px-20 py-10'>
+            <h1 className='text-3xl md:text-4xl text-center text-gray-500 font-bold mb-7'>Connect <span className='text-primary'>with Me</span></h1>
             <div className='flex md:flex-row flex-col-reverse'>
                 {/* contact info */}
                 <div className='flex-1 flex justify-center items-center md:pt-0 pt-5'>
                     <div className="space-y-6 text-center md:text-left">
-                        <h2 className="text-3xl font-bold">Get in Touch</h2>
+                        <h2 className="text-3xl font-bold text-gray-500">Get in Touch</h2>
                         <p className="text-gray-300">
                             I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
                         </p>
 
-                        <div className="space-y-2">
+                        <div className="space-y-2 text-gray-600">
                             <p className="flex items-center justify-center md:justify-start gap-2">
                                 <FaEnvelope className="text-green-400" /> kousarahammed5@gmail.com
                             </p>
@@ -25,7 +25,7 @@ const Contact = () => {
                         </div>
 
                         {/* Social Links */}
-                        <div className='flex items-center justify-center md:justify-start gap-5'>
+                        <div className='flex items-center justify-center md:justify-start gap-5 text-gray-500'>
                             <a href="https://www.linkedin.com/in/md-kousar21/" target="_blank"><FaLinkedin className='size-6 hover:text-green-400' /></a>
                             <a href="https://github.com/kousar-21" target="_blank"><FaGithub className='size-6 hover:text-green-400' /></a>
                             <a href="https://www.facebook.com/kousar.ahammed.eshan" target="_blank" ><FaFacebook className='size-6 hover:text-green-400' /></a>

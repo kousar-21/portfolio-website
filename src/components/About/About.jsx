@@ -3,21 +3,21 @@ import MyImage from '../../assets/Images/my-profile.jpg'
 
 const About = () => {
     return (
-        <section className='flex flex-col justify-center lg:min-h-[calc(100vh-80px)] bg-gray-700'>
+        <section className='flex flex-col justify-center lg:min-h-[calc(100vh-80px)]'>
 
-            <div className='flex md:flex-row flex-col-reverse px-5 md:px-10 lg:px-20 py-12 bg-gray-700'>
+            <div className='flex md:flex-row flex-col-reverse px-5 md:px-10 lg:px-20 py-12'>
                 {/* Left Image Side */}
                 <div className='flex-1 flex justify-center items-center md:py-0 py-8'>
                     <img
                         src={MyImage}
                         alt="Kousar-profile-Image"
-                        className='size-60 rounded-full border-4 border-primary shadow-lg shadow-primary/50'
+                        className='size-72 rounded-full border-4 border-primary shadow-lg shadow-primary/50'
                     />
                 </div>
 
                 {/* Right Text Side */}
                 <div className='flex-1 md:text-start text-center'>
-                    <h1 className='text-3xl md:text-4xl font-bold mb-5'>About <span className='text-primary'>Me</span></h1>
+                    <h1 className='text-3xl md:text-4xl font-bold mb-5 text-gray-500'>About <span className='text-primary'>Me</span></h1>
                     <p>
                         <p className="text-gray-300 leading-relaxed mb-4">
                             Hello! I'm <span className="text-purple-400 font-semibold">Kousar Ahammed Eshan</span>, a passionate
