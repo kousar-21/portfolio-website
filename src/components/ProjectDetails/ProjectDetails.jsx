@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 import projectsData from '../Projects/Projects.json'
+import Galaxy from '../Animations/Galaxy/Galaxy';
 
 const ProjectDetails = () => {
 
@@ -20,7 +21,20 @@ const ProjectDetails = () => {
         );
     }
     return (
-        <section className='px-5 md:px-10 lg:px-20 py-10 bg-gray-500'>
+        <section className='px-5 md:px-10 lg:px-20 py-10'>
+            {/* animation */}
+            {/* galaxy background */}
+            <div className="bg-gray-800 absolute inset-0 -z-10"
+                style={{ height: "100%" }}>
+                <Galaxy
+                    mouseRepulsion={true}
+                    mouseInteraction={true}
+                    density={1.5}
+                    glowIntensity={0.5}
+                    saturation={0.8}
+                    hueShift={240}
+                />
+            </div>
 
             <div className="max-w-5xl mx-auto px-6 text-white">
                 <h1 className="text-3xl md:text-4xl font-bold mb-6">{project.name}</h1>

@@ -4,7 +4,7 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <section className='px-5 md:px-10 lg:px-20 py-10'>
+        <section id="Contacts" className='px-5 md:px-10 lg:px-20 py-10'>
             <h1 className='text-3xl md:text-4xl text-center text-gray-500 font-bold mb-7'>Connect <span className='text-primary'>with Me</span></h1>
             <div className='flex md:flex-row flex-col-reverse'>
                 {/* contact info */}
@@ -15,8 +15,8 @@ const Contact = () => {
                             I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
                         </p>
 
-                        <div className="space-y-2 text-gray-600">
-                            <p className="flex items-center justify-center md:justify-start gap-2">
+                        <div className="space-y-2 text-gray-500">
+                            <p className="flex items-center justify-center md:justify-start gap-2 ">
                                 <FaEnvelope className="text-green-400" /> kousarahammed5@gmail.com
                             </p>
                             <p className="flex items-center justify-center md:justify-start gap-2">

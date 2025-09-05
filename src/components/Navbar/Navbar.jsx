@@ -1,21 +1,43 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router';
 import Logo from '../Logo/Logo';
 import { CgArrowTopRight } from "react-icons/cg";
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
+    const location = useLocation();
+    const navigate = useNavigate();
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const handleHomeClick = () => {
+        if (location.pathname === "/") {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+            navigate("/");
+        }
+    };
     const links = <>
-    <li><Link>Home</Link></li>
-    <li><Link>About</Link></li>
-    <li><Link>Skills</Link></li>
-    <li><Link>Projects</Link></li>
-    <li><Link>Contact</Link></li>
+        <li><button onClick={handleHomeClick}>Home</button></li>
+        <li><Link to="About" smooth={true} duration={500} offset={-70}>
+            About
+        </Link></li>
+        <li><Link to="Skills" smooth={true} duration={500} offset={-70}>
+            Skills
+        </Link></li>
+        <li><Link to="Projects" smooth={true} duration={500} offset={-70}>
+            Projects
+        </Link></li>
+        <li><Link to="Contacts" smooth={true} duration={500} offset={-70}>
+            Contacts
+        </Link></li>
     </>
 
     return (
-        <div className="navbar bg-gray-800 text-white shadow-sm px-5 md:px-10 lg:px-20">
+        <div id='Home' className="navbar bg-gray-800 text-white shadow-sm px-5 md:px-10 lg:px-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
@@ -33,12 +55,12 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center hidden md:flex">
-                <ul className="menu menu-horizontal px-1"> 
+                <ul className="menu menu-horizontal px-1">
                     {links}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-primary text-white hover:bg-violet-900 hover:text-white border-none flex items-center">Resume <CgArrowTopRight size={16} /></a>
+                <a href='https://drive.google.com/file/d/1v3labYgXfCYzr9UOr_YYc1fwyAwv4Pit/view?usp=sharing' target='_blank' className="btn bg-primary text-white hover:bg-violet-900 hover:text-white border-none flex items-center">Resume <CgArrowTopRight size={16} /></a>
             </div>
         </div>
     );

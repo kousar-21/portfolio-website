@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from "../../assets/Images/my-img4.png"
-import SocialIcon from '../socialIcon/SocialIcon';
+import Image from "../../assets/images/my-img4.png"
+import SocialIcon from '../SocialIcon/SocialIcon';
 import { ImDownload } from "react-icons/im";
 import Typewriter from 'typewriter-effect';
 
@@ -39,7 +39,10 @@ const Hero = () => {
                     <div className='flex justify-center md:justify-start gap-5'>
                         <button className='btn btn-primary px-6 hover:bg-violet-900 hover:text-white'>Hire Me</button>
 
-                        <button className='btn btn-outline px-6 text-white hover:text-primary'><ImDownload />Resume</button>
+                        <a href="https://drive.google.com/uc?export=download&id=1v3labYgXfCYzr9UOr_YYc1fwyAwv4Pit"
+                            download="Kousar_Resume.pdf"
+                            className='btn btn-outline px-6 text-white hover:text-primary'>
+                            <ImDownload />Resume</a>
                     </div>
                 </div>
 

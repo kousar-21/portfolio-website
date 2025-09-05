@@ -1,9 +1,9 @@
 import React from 'react';
-import MyImage from '../../assets/Images/my-profile.jpg'
+import MyImage from '../../assets/images/my-profile.jpg'
 
 const About = () => {
     return (
-        <section className='flex flex-col justify-center lg:min-h-[calc(100vh-80px)]'>
+        <section id="About" className='flex flex-col justify-center lg:min-h-[calc(100vh-80px)]'>
 
             <div className='flex md:flex-row flex-col-reverse px-5 md:px-10 lg:px-20 py-12'>
                 {/* Left Image Side */}
