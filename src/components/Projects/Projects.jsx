@@ -11,20 +11,16 @@ const Projects = () => {
     }, []);
     return (
         <section id="Projects" className='px-5 md:px-10 lg:px-20 py-10'>
-            <h1 data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
+            <h1 data-aos="zoom-in-up" data-aos-duration="1000"
                 className='text-3xl md:text-4xl text-gray-500 text-center font-bold mb-4'>
                 My <span className='text-primary'>Projects</span>
             </h1>
-            <p className='text-center mb-7 text-gray-400'>Some Of my Favorite Work</p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000" className='text-center mb-7 text-gray-400'>Some Of my Favorite Work</p>
             {/* projects */}
             <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-6">
                 {projects.map((project) => (
                     <div
-                        data-aos="zoom-in-up"
-                        data-aos-easing="linear"
-                        data-aos-duration="1500"
+                        data-aos="zoom-in-up" data-aos-duration="1000"
                         key={project.id}
                         className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                     >

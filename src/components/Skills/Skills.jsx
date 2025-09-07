@@ -15,10 +15,11 @@ const skills = [
 const Skills = () => {
     return (
         <section id="Skills" className='px-5 md:px-10 lg:px-20 py-12'>
-            <h1 className='text-3xl md:text-4xl font-bold text-center text-gray-500 mb-5'>My <span className='text-primary'>Skills</span></h1>
+            <h1 data-aos="zoom-in-up" data-aos-duration="1000" className='text-3xl md:text-4xl font-bold text-center text-gray-500 mb-5'>My <span className='text-primary'>Skills</span></h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {skills.map((skill, index) => (
                     <div
+                        data-aos="zoom-in-up" data-aos-duration="1000"
                         key={index}
                         className="group flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-primary hover:scale-105 transition-all duration-300 shadow-lg"
                     >
@@ -28,7 +29,7 @@ const Skills = () => {
                         </div>
 
                         {/* Name */}
-                        <h3 className="text-lg font-semibold mb-1">{skill.name}</h3>
+                        <h3 className="text-lg text-gray-400 font-semibold mb-1">{skill.name}</h3>
 
                         {/* Glow underline */}
                         <div className="w-10 h-1 bg-primary rounded-full group-hover:w-16 transition-all duration-300"></div>

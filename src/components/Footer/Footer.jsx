@@ -3,7 +3,7 @@ import myLogo from '../../assets/images/portfolio-Logo.png'
 import LinksIcon from '../../LinksIcon/LinksIcon';
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white flex md:flex-row flex-col justify-between items-center px-5 md:px-10 lg:px-20 py-3">
+        <footer className="bg-blue-950 text-white flex md:flex-row flex-col justify-between items-center px-5 md:px-10 lg:px-20 py-3">
 
             <div className='flex items-center gap-3 md:flex-row flex-col md:pb-0 pb-5'>
                 <div>
@@ -17,7 +17,7 @@ const Footer = () => {
             <div className='md:pb-0 pb-5'>
                <LinksIcon></LinksIcon>
             </div>
-            <div><p className='text-gray-500 text-lg md:text-sm lg:text-lg'v>© {new Date().getFullYear()} Kousar Ahammed. All Rights Reserved.</p></div>
+            <div><p className='text-gray-500 text-base md:text-sm lg:text-lg'v>© {new Date().getFullYear()} Kousar Ahammed. All Rights Reserved.</p></div>
 
 
         </footer>
