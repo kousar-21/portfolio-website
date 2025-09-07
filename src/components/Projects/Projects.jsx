@@ -17,7 +17,7 @@ const Projects = () => {
             </h1>
             <p data-aos="zoom-in-up" data-aos-duration="1000" className='text-center mb-7 text-gray-400'>Some Of my Favorite Work</p>
             {/* projects */}
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-6">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
                 {projects.map((project) => (
                     <div
                         data-aos="zoom-in-up" data-aos-duration="1000"

@@ -6,9 +6,10 @@ const Contact = () => {
     return (
         <section id="Contacts" className='px-5 md:px-10 lg:px-20 py-10'>
             <h1 data-aos="zoom-in-up" data-aos-duration="1000" className='text-3xl md:text-4xl text-center text-gray-500 font-bold mb-7'>Connect <span className='text-primary'>with Me</span></h1>
-            <div className='flex md:flex-row flex-col-reverse'>
+            <div className='flex md:flex-row flex-col-reverse gap-5'>
                 {/* contact info */}
-                <div data-aos="zoom-in-up" data-aos-duration="1000" className='flex-1 flex justify-center items-center md:pt-0 pt-5 text-center p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10'>
+
+                <div data-aos="zoom-in-up" data-aos-duration="1000" className='flex-1 flex justify-center items-center text-center p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10'>
                     <div className="space-y-6 text-center md:text-left">
                         <h2 className="text-3xl font-bold text-gray-500">Get in Touch</h2>
                         <p className="text-gray-300">
@@ -32,6 +33,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+
 
                 {/* form side */}
                 <div data-aos="zoom-in-up" data-aos-duration="1000" className='flex-1'>

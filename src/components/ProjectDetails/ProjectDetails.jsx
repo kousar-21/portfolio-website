@@ -23,7 +23,7 @@ const ProjectDetails = () => {
     return (
         <section className='px-5 md:px-10 lg:px-20 py-10 bg-cover bg-center' style={{ backgroundImage: `url(${detailsBG})` }}>
 
-            <div className="max-w-5xl mx-auto px-6 text-white">
+            <div className="max-w-5xl mx-auto text-white">
                 <h1 data-aos="fade-left" data-aos-duration="1000" className="text-3xl md:text-4xl font-bold mb-6">{project.name}</h1>
                 <img data-aos="fade-left" data-aos-duration="1000" src={project.image} alt={project.name} className="w-full rounded-lg mb-6" />
 
