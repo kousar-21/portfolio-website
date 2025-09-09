@@ -37,7 +37,7 @@ const About = () => {
                             a real impact.
                         </p>
                         <p className="text-gray-300">
-                            Let's create something amazing together 🚀
+                            Let's create something amazing together.
                         </p>
                     </p>
                 </div>
