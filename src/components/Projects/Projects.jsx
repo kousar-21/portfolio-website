@@ -17,26 +17,48 @@ const Projects = () => {
             </h1>
             <p data-aos="zoom-in-up" data-aos-duration="1000" className='text-center mb-7 text-gray-400'>Some Of my Favorite Work</p>
             {/* projects */}
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-8 h-full">
                 {projects.map((project) => (
                     <div
-                        data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1000"
                         key={project.id}
-                        className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                        className="card grid lg:grid-cols-2 bg-base-800 shadow-md border border-gray-200 rounded-xl hover:shadow-lg hover:scale-[1.02] transition-transform duration-300"
                     >
-                        <img src={project.image} alt={project.name} className="w-full h-48 object-cover" />
-                        <div className="p-6">
-                            <h3 className="text-xl font-semibold text-white">{project.name}</h3>
-                            <Link
-                                to={`/projects/${project.id}`}
-                                className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-                            >
-                                View More
-                            </Link>
+                        {/* Project Image */}
+                        <figure className="lg:w-full h-full">
+                            <img
+                                src={project.image}
+                                alt={project.name}
+                                className="h-48 w-full object-cover lg:h-full lg:rounded-l-xl"
+                            />
+                        </figure>
+
+                        {/* Project Content */}
+                        <div className="card-body">
+                            <h2 className="card-title text-2xl font-semibold text-gray-500">
+                                {project.name}
+                            </h2>
+                            <p className="text-gray-300 text-sm leading-relaxed">
+                                {project.details
+                                    ? project.details
+                                    : "This project is a modern solution designed with a focus on usability and performance. Explore more details to see features, tech stack, and live demo."}
+                            </p>
+
+                            <div className="card-actions justify-end mt-4">
+                                <Link
+                                    to={`/projects/${project.id}`}
+                                    className="btn btn-primary px-6"
+                                >
+                                    View More
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 ))}
             </div>
+
+
         </section>
     );
 };

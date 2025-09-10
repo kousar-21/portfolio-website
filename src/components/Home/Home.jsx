@@ -35,7 +35,7 @@ const Home = () => {
                 >
                     <Skills></Skills>
                 </div>
-                <div className='flex flex-col justify-center lg:min-h-[calc(100vh-80px)]'>
+                <div className='flex flex-col justify-center'>
                     <Projects></Projects>
                 </div>
                 <div className='flex flex-col justify-center min-h-[calc(100vh - 80px)]' >
