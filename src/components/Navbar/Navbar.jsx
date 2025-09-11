@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 text-black rounded-box z-1 mt-3 w-52 pr-2 shadow">
+                        className="menu menu-sm dropdown-content bg-base-100 text-black dark:text-gray-200 rounded-box z-1 mt-3 w-52 pr-2 shadow">
                         {/* links */}
                         {links}
                     </ul>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href='https://drive.google.com/file/d/1v3labYgXfCYzr9UOr_YYc1fwyAwv4Pit/view?usp=sharing' target='_blank' className="btn bg-primary text-white hover:bg-violet-900 hover:text-white border-none flex items-center">Resume <CgArrowTopRight size={16} /></a>
+                <a href='https://drive.google.com/file/d/1v3labYgXfCYzr9UOr_YYc1fwyAwv4Pit/view?usp=sharing' target='_blank' className="btn bg-primary text-white hover:bg-gray-200 hover:text-primary border-none flex items-center">Resume <CgArrowTopRight size={16} /></a>
             </div>
         </div>
     );

@@ -37,7 +37,7 @@ const Hero = () => {
                     </div>
                     {/* Buttons */}
                     <div className='flex justify-center md:justify-start gap-5'>
-                        <button className='btn btn-primary px-6 hover:bg-violet-900 hover:text-white'>Hire Me</button>
+                        <button className='btn btn-primary px-6 hover:bg-gray-200 hover:text-primary'>Hire Me</button>
 
                         <a href="https://drive.google.com/uc?export=download&id=1v3labYgXfCYzr9UOr_YYc1fwyAwv4Pit"
                             download="Kousar_Resume.pdf"

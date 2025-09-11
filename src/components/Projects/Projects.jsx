@@ -17,38 +17,42 @@ const Projects = () => {
             </h1>
             <p data-aos="zoom-in-up" data-aos-duration="1000" className='text-center mb-7 text-gray-400'>Some Of my Favorite Work</p>
             {/* projects */}
-            <div className="grid grid-cols-1 gap-8 h-full">
+            <div className="grid grid-cols-1 gap-8">
                 {projects.map((project) => (
                     <div
                         data-aos="zoom-in-up"
                         data-aos-duration="1000"
                         key={project.id}
-                        className="card grid lg:grid-cols-2 bg-base-800 shadow-md border border-gray-200 rounded-xl hover:shadow-lg hover:scale-[1.02] transition-transform duration-300"
+                        className="card bg-base-800 shadow-md border border-gray-200 rounded-xl hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 flex flex-col lg:flex-row"
                     >
                         {/* Project Image */}
-                        <figure className="lg:w-full h-full">
+                        <figure
+                            className="lg:flex-1 h-64 lg:h-auto w-full overflow-hidden rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none bg-white/5 flex items-center justify-center"
+                        >
                             <img
                                 src={project.image}
                                 alt={project.name}
-                                className="h-48 w-full object-cover lg:h-full lg:rounded-l-xl"
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                         </figure>
 
                         {/* Project Content */}
-                        <div className="card-body">
-                            <h2 className="card-title text-2xl font-semibold text-gray-500">
-                                {project.name}
-                            </h2>
-                            <p className="text-gray-300 text-sm leading-relaxed">
-                                {project.details
-                                    ? project.details
-                                    : "This project is a modern solution designed with a focus on usability and performance. Explore more details to see features, tech stack, and live demo."}
-                            </p>
+                        <div className="card-body lg:flex-1 flex flex-col justify-between p-5">
+                            <div>
+                                <h2 className="card-title text-2xl font-semibold text-gray-500">
+                                    {project.name}
+                                </h2>
+                                <p className="text-gray-300 text-sm leading-relaxed mt-2">
+                                    {project.details
+                                        ? project.details
+                                        : "This project is a modern solution designed with a focus on usability and performance. Explore more details to see features, tech stack, and live demo."}
+                                </p>
+                            </div>
 
                             <div className="card-actions justify-end mt-4">
                                 <Link
                                     to={`/projects/${project.id}`}
-                                    className="btn btn-primary px-6"
+                                    className="btn btn-primary px-6 hover:bg-gray-200 hover:text-primary"
                                 >
                                     View More
                                 </Link>
@@ -57,6 +61,8 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
+
+
 
 
         </section>
