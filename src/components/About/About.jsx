@@ -18,7 +18,7 @@ const About = () => {
                 {/* Right Text Side */}
                 <div data-aos="zoom-in-up" data-aos-duration="1000" className='flex-1 md:text-start text-center'>
                     <h1 className='text-3xl md:text-4xl font-bold mb-5 text-gray-500'>About <span className='text-primary'>Me</span></h1>
-                    <p>
+                    <div>
                         <p className="text-gray-300 leading-relaxed mb-4">
                             Hello! I'm <span className="text-purple-400 font-semibold">Kousar Ahammed Eshan</span>, a passionate
                             <span className="text-purple-400"> Frontend Developer</span> with a strong love for
@@ -39,7 +39,7 @@ const About = () => {
                         <p className="text-gray-300">
                             Let's create something amazing together.
                         </p>
-                    </p>
+                    </div>
                 </div>
             </div>
         </section>

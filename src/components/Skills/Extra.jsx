@@ -6,7 +6,6 @@ import {
   SiExpress, SiMongodb, SiTailwindcss, SiDaisyui, 
   SiNetlify, SiVercel, SiFramer, SiSwiper, SiJavascript 
 } from "react-icons/si";
-
 import { BiLogoVisualStudio } from "react-icons/bi";
 
 const skills = [
@@ -19,32 +18,26 @@ const skills = [
   { name: "MongoDB", icon: <SiMongodb className="text-green-400" />, level: "Intermediate", type: "backend" },
 
   // 🛠 Tools & Libraries
-  { name: "Vercel", icon: <SiVercel className="text-white" />, level: "Intermediate", type: "tools" },
   { name: "GitHub", icon: <FaGithub className="text-white" />, level: "Intermediate", type: "tools" },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" />, level: "Advanced", type: "frontend" },
-  { name: "DaisyUI", icon: <SiDaisyui className="text-teal-400" />, level: "Advanced", type: "frontend" },
+  { name: "DaisyUI", icon: <SiDaisyui className="text-purple-400" />, level: "Advanced", type: "frontend" },
   { name: "Netlify", icon: <SiNetlify className="text-teal-400" />, level: "Intermediate", type: "tools" },
-  { name: "VS Code", icon: <BiLogoVisualStudio className="text-blue-500" />, level: "Advanced", type: "tools" },
-  { name: "Framer Motion", icon: <SiFramer className="text-yellow-400" />, level: "Intermediate", type: "frontend" },
-  { name: "Swiper.js", icon: <SiSwiper className="text-blue-500" />, level: "Intermediate", type: "frontend" },
+  { name: "Vercel", icon: <SiVercel className="text-white" />, level: "Intermediate", type: "tools" },
+  { name: "VS Code", icon: <BiLogoVisualStudio className="text-blue-400"/>, level: "Advanced", type: "tools" },
+  { name: "Framer Motion", icon: <SiFramer className="text-pink-400" />, level: "Intermediate", type: "frontend" },
+  { name: "Swiper.js", icon: <SiSwiper className="text-purple-500" />, level: "Intermediate", type: "frontend" },
   { name: "AOS Animation", icon: <SiJavascript className="text-yellow-400" />, level: "Intermediate", type: "frontend" }
 ];
 
 const Skills = () => {
   const [filter, setFilter] = useState("initial");
-  const [showMore, setShowMore] = useState(false);
 
   // Filter logic
-  let filteredSkills = filter === "all"
-    ? skills
-    : filter === "initial"
+  const filteredSkills = filter === "initial"
+    ? skills.slice(0, 8) // show only 8 by default
+    : filter === "all"
       ? skills
       : skills.filter(skill => skill.type === filter);
-
-  // Show More / Show Less logic
-  if (!showMore && filter === "initial") {
-    filteredSkills = filteredSkills.slice(0, 8);
-  }
 
   return (
     <section id="Skills" className='px-5 md:px-10 lg:px-20 py-12'>
@@ -61,10 +54,7 @@ const Skills = () => {
         {["all", "frontend", "backend", "tools"].map((btn) => (
           <button
             key={btn}
-            onClick={() => {
-              setFilter(btn);
-              setShowMore(true); // when filtered, show all relevant items
-            }}
+            onClick={() => setFilter(btn)}
             className={`px-5 py-2 rounded-full border text-sm font-semibold transition-all duration-300 
               ${filter === btn 
                 ? "bg-primary text-white border-primary shadow-lg scale-105" 
@@ -99,18 +89,6 @@ const Skills = () => {
           </div>
         ))}
       </div>
-
-      {/* Show More / Show Less Button */}
-      {filter === "initial" && (
-        <div className="flex justify-center mt-10">
-          <button
-            onClick={() => setShowMore(!showMore)}
-            className="px-6 py-2 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
-          >
-            {showMore ? "Show Less" : "Show More"}
-          </button>
-        </div>
-      )}
     </section>
   );
 };
