@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from "../../assets/images/my-img4.png"
+import Image from "../../assets/images/kousar-image.png"
 import SocialIcon from '../SocialIcon/SocialIcon';
 import { ImDownload } from "react-icons/im";
 import Typewriter from 'typewriter-effect';
