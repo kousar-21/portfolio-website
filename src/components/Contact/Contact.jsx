@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import ContactForm from './ContactForm';
 
 const Contact = () => {
     return (
@@ -37,47 +38,7 @@ const Contact = () => {
 
                 {/* form side */}
                 <div data-aos="zoom-in-up" data-aos-duration="1000" className='flex-1'>
-                    <form
-                        // onSubmit={sendEmail}
-                        className="bg-gray-900 p-6 rounded-lg shadow-lg max-w-md mx-auto w-full"
-                    >
-                        <div className="mb-4">
-                            <label className="block mb-2 text-gray-300">Name</label>
-                            <input
-                                type="text"
-                                name="name"
-                                required
-                                className="w-full px-3 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-green-400"
-                            />
-                        </div>
-
-                        <div className="mb-4">
-                            <label className="block mb-2 text-gray-300">Email</label>
-                            <input
-                                type="email"
-                                name="email"
-                                required
-                                className="w-full px-3 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-green-400"
-                            />
-                        </div>
-
-                        <div className="mb-4">
-                            <label className="block mb-2 text-gray-300">Message</label>
-                            <textarea
-                                name="message"
-                                rows="4"
-                                required
-                                className="w-full px-3 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-green-400"
-                            ></textarea>
-                        </div>
-
-                        <button
-                            type="submit"
-                            className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition-colors"
-                        >
-                            Send Message
-                        </button>
-                    </form>
+                    <ContactForm></ContactForm>
                 </div>
             </div>
         </section>
