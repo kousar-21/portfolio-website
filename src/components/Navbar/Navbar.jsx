@@ -21,23 +21,23 @@ const Navbar = () => {
         }
     };
     const links = <>
-        <li><button onClick={handleHomeClick}>Home</button></li>
-        <li><Link to="About" smooth={true} duration={500} offset={-70}>
+        <li><button className='text-slate-900 font-medium hover:text-slate-600 transition-colors' onClick={handleHomeClick}>Home</button></li>
+        <li><Link to="About" className='hover:text-slate-900 font-medium text-slate-600 transition-colors' smooth={true} duration={500} offset={-70}>
             About
         </Link></li>
-        <li><Link to="Skills" smooth={true} duration={500} offset={-70}>
+        <li><Link to="Skills" className='hover:text-slate-900 font-medium text-slate-600 transition-colors' smooth={true} duration={500} offset={-70}>
             Skills
         </Link></li>
-        <li><Link to="Projects" smooth={true} duration={500} offset={-70}>
+        <li><Link to="Projects" className='hover:text-slate-900 font-medium text-slate-600 transition-colors' smooth={true} duration={500} offset={-70}>
             Projects
         </Link></li>
-        <li><Link to="Contacts" smooth={true} duration={500} offset={-70}>
+        <li><Link to="Contacts" className='hover:text-slate-900 font-medium text-slate-600 transition-colors' smooth={true} duration={500} offset={-70}>
             Contacts
         </Link></li>
     </>
 
     return (
-        <div id='Home' className="navbar bg-blue-950 text-white shadow-sm px-5 md:px-10 lg:px-20">
+        <div id='Home' className="navbar bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 px-5 md:px-10 lg:px-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost md:hidden px-0 pr-5">
@@ -55,12 +55,12 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center hidden md:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 ">
                     {links}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href='https://drive.google.com/file/d/1v3labYgXfCYzr9UOr_YYc1fwyAwv4Pit/view?usp=sharing' target='_blank' className="btn bg-primary text-white hover:bg-gray-200 hover:text-primary border-none flex items-center">Resume <CgArrowTopRight size={16} /></a>
+                <a href='https://drive.google.com/file/d/1v3labYgXfCYzr9UOr_YYc1fwyAwv4Pit/view?usp=sharing' target='_blank' className="hidden md:flex items-center space-x-2 bg-slate-900 text-white px-6 py-2.5 rounded-lg hover:bg-slate-800 transition-colors font-medium">Resume <CgArrowTopRight size={16} /></a>
             </div>
         </div>
     );

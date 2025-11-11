@@ -5,11 +5,13 @@ import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
 // import Galaxy from '../Animations/Galaxy/Galaxy';
-import bgImage from '../../assets/images/background-8.jpg'
+// import bgImage from '../../assets/images/background-8.jpg'
 
 const Home = () => {
     return (
-        <div className='bg-cover bg-center' style={{ backgroundImage: `url(${bgImage})` }}>
+        <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
+            {/* className='bg-cover bg-center ' style={{ backgroundImage: `url(${bgImage})` }} */}
+
             {/* <div className="bg-gray-800 absolute inset-0 -z-10"
                 style={{ height: "100%" }}>
                 <Galaxy
