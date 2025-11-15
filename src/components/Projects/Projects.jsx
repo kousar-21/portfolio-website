@@ -42,7 +42,7 @@ const Projects = () => {
                                 <h2 className="card-title text-2xl font-semibold text-gray-500">
                                     {project.name}
                                 </h2>
-                                <p className="text-gray-300 text-sm leading-relaxed mt-2">
+                                <p className="text-slate-600 text-sm leading-relaxed mt-2">
                                     {project.details
                                         ? project.details
                                         : "This project is a modern solution designed with a focus on usability and performance. Explore more details to see features, tech stack, and live demo."}
