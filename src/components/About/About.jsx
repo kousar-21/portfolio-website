@@ -17,18 +17,18 @@ const About = () => {
 
                 {/* Right Text Side */}
                 <div data-aos="zoom-in-up" data-aos-duration="1000" className='flex-1 md:text-start text-center'>
-                    <h1 className='text-3xl md:text-4xl font-bold mb-5 text-gray-500'>About <span className='text-primary'>Me</span></h1>
+                    <h1 className='text-3xl md:text-4xl font-bold mb-5 text-slate-600'>About <span className='text-slate-800'>Me</span></h1>
                     <div>
                         <p className="text-slate-600 leading-relaxed mb-4">
-                            Hello! I'm <span className="text-purple-400 font-semibold">Kousar Ahammed Eshan</span>, a passionate
-                            <span className="text-purple-400"> Frontend Developer</span> with a strong love for
+                            Hello! I'm <span className="text-slate-800 font-bold">Kousar Ahammed Eshan</span>, a passionate
+                            <span className="text-slate-800 font-bold">Web Developer</span> with a strong love for
                             creating beautiful and functional web applications. My programming journey started from a
                             deep curiosity about how websites work, which turned into a full-time passion.
                         </p>
                         <p className="text-slate-600 leading-relaxed mb-4">
                             I enjoy building responsive, user-friendly, and visually appealing websites using modern
-                            technologies like <span className="text-purple-400">React</span>, <span className="text-purple-400">Node.js</span>,
-                            and <span className="text-purple-400">MongoDB</span>. I’m always eager to learn new tools and
+                            technologies like <span className="text-slate-800 font-bold">React</span>, <span className="text-slate-800 font-bold">Node.js</span>,
+                            and <span className="text-slate-800 font-bold">MongoDB</span>. I’m always eager to learn new tools and
                             frameworks to make my work even better.
                         </p>
                         <p className="text-slate-600 leading-relaxed mb-4">
