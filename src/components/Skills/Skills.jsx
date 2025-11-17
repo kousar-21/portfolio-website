@@ -49,9 +49,9 @@ const Skills = () => {
             <h1
                 data-aos="zoom-in-up"
                 data-aos-duration="1000"
-                className='text-3xl md:text-4xl font-bold text-center text-gray-500 mb-8'
+                className='text-3xl md:text-4xl font-bold text-center text-slate-600 mb-8'
             >
-                My <span className='text-primary'>Skills</span>
+                My <span className='text-slate-800'>Skills</span>
             </h1>
 
             {/* Filter Buttons */}
