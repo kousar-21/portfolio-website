@@ -3,7 +3,7 @@ import myLogo from '../../assets/images/portfolio-Logo.png'
 import LinksIcon from '../../LinksIcon/LinksIcon';
 const Footer = () => {
     return (
-        <footer className="bg-blue-950 text-white flex md:flex-row flex-col justify-between items-center px-5 md:px-10 lg:px-20 py-3">
+        <footer className="bg-slate-100 text-white flex md:flex-row flex-col justify-between items-center px-5 md:px-10 lg:px-20 py-3">
 
             <div className='flex items-center gap-3 md:flex-row flex-col md:pb-0 pb-5'>
                 <div>
