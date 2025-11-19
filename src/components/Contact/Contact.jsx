@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 const Contact = () => {
     return (
         <section id="Contacts" className='px-5 md:px-10 lg:px-20 py-10'>
-            <h1 data-aos="zoom-in-up" data-aos-duration="1000" className='text-3xl md:text-4xl text-center text-gray-500 font-bold mb-7'>Connect <span className='text-primary'>with Me</span></h1>
+            <h1 data-aos="zoom-in-up" data-aos-duration="1000" className='text-3xl md:text-4xl text-center text-slate-600 font-bold mb-7'>Connect <span className='text-slate-900'>with Me</span></h1>
             <div className='flex md:flex-row flex-col-reverse gap-5'>
                 {/* contact info */}
 
