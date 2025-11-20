@@ -104,7 +104,7 @@ const Skills = () => {
                 <div className="flex justify-center mt-10">
                     <button
                         onClick={() => setShowMore(!showMore)}
-                        className="px-6 py-2 rounded-full bg-primary text-white font-semibold shadow-lg hover:bg-gray-200 hover:text-primary hover:scale-105 transition-transform duration-300"
+                        className="px-6 py-2 rounded-full bg-slate-900 text-white font-semibold shadow-lg hover:bg-gray-200 hover:text-slate-900 hover:scale-105 transition-transform duration-300"
                     >
                         {showMore ? "Show Less" : "Show More"}
                     </button>
