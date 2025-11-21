@@ -39,7 +39,7 @@ const Projects = () => {
                         {/* Project Content */}
                         <div className="card-body lg:flex-1 flex flex-col justify-between p-5">
                             <div>
-                                <h2 className="card-title text-2xl font-semibold text-gray-500">
+                                <h2 className="card-title text-2xl font-semibold text-slate-800">
                                     {project.name}
                                 </h2>
                                 <p className="text-slate-600 text-sm leading-relaxed mt-2">
