@@ -10,7 +10,7 @@ const Footer = () => {
                     <img className='size-16 border-2 border-primary rounded-full' src={myLogo} alt="Kousar Ahammed" />
                 </div>
                 <div className='md:text-start text-center'>
-                    <h1 className='text-xl md:text-base lg:text-xl text-gray-300 font-medium'>Md. Kousar Ahammed Eshan</h1>
+                    <h1 className='text-xl md:text-base lg:text-xl text-slate-800 font-medium'>Md. Kousar Ahammed Eshan</h1>
                     <h3 className='text-sm text-gray-500'>Frontend Developer</h3>
                 </div>
             </div>
