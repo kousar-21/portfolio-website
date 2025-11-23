@@ -17,7 +17,7 @@ const Footer = () => {
             <div className='md:pb-0 pb-5'>
                <LinksIcon></LinksIcon>
             </div>
-            <div><p className='text-gray-500 text-base md:text-sm lg:text-lg'>© {new Date().getFullYear()} Kousar Ahammed. All Rights Reserved.</p></div>
+            <div><p className='text-slate-800 text-base md:text-sm lg:text-lg'>© {new Date().getFullYear()} Kousar Ahammed. All Rights Reserved.</p></div>
 
 
         </footer>
