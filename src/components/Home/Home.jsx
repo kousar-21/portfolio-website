@@ -44,8 +44,6 @@ const Home = () => {
                     <Contact></Contact>
                 </div>
             </div>
-
-
         </div>
     );
 };

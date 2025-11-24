@@ -15,7 +15,7 @@ const Projects = () => {
                 className='text-3xl md:text-4xl text-slate-600 text-center font-bold mb-4'>
                 My <span className='text-slate-800'>Projects</span>
             </h1>
-            <p data-aos="zoom-in-up" data-aos-duration="1000" className='text-center mb-7 text-gray-400'>Some Of my Favorite Work</p>
+            <p data-aos="zoom-in-up" data-aos-duration="1000" className='text-center mb-7 text-slate-600'>Some Of my Favorite Work</p>
             {/* projects */}
             <div className="grid grid-cols-1 gap-8">
                 {projects.map((project) => (
