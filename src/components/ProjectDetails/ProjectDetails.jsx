@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 import projectsData from '../Projects/Projects.json'
-import detailsBG from '../../assets/images/background-2.jpg'
+// import detailsBG from '../../assets/images/background-2.jpg'
 
 const ProjectDetails = () => {
 
@@ -21,7 +21,7 @@ const ProjectDetails = () => {
         );
     }
     return (
-        <section className='px-5 md:px-10 lg:px-20 py-10 bg-cover bg-center' style={{ backgroundImage: `url(${detailsBG})` }}>
+        <section className='px-5 md:px-10 lg:px-20 py-10 bg-cover bg-center'>
 
             <div className="max-w-5xl mx-auto text-white">
                 <h1 data-aos="fade-left" data-aos-duration="1000" className="text-3xl md:text-4xl font-bold mb-6">{project.name}</h1>
