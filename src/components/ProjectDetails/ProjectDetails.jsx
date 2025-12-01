@@ -27,10 +27,10 @@ const ProjectDetails = () => {
                 <h1 data-aos="fade-left" data-aos-duration="1000" className="text-3xl md:text-4xl font-bold mb-6">{project.name}</h1>
                 <img data-aos="fade-left" data-aos-duration="1000" src={project.image} alt={project.name} className="w-full rounded-lg mb-6" />
 
-                <p data-aos="fade-left" data-aos-duration="1000" className="mb-6">{project.description}</p>
+                <p data-aos="fade-left" data-aos-duration="1000" className="mb-6 text-slate-600">{project.description}</p>
 
                 <div className="mb-4">
-                    <h3 data-aos="fade-left" data-aos-duration="1000" className="font-semibold text-lg">Tech Stack:</h3>
+                    <h3 data-aos="fade-left" data-aos-duration="1000" className="font-semibold text-slate-600 text-lg">Tech Stack:</h3>
                     <ul className="flex flex-wrap gap-3 mt-2">
                         {project.stack.map((tech, index) => (
                             <li key={index} data-aos="fade-left" data-aos-duration="1000" className="bg-blue-600 px-3 py-1 rounded-full text-sm">
