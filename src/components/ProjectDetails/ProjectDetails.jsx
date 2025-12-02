@@ -41,13 +41,13 @@ const ProjectDetails = () => {
                 </div>
 
                 <div className="mb-4">
-                    <h3 data-aos="fade-left" data-aos-duration="1000" className="font-semibold text-lg">Challenges:</h3>
-                    <p data-aos="fade-left" data-aos-duration="1000">{project.challenges}</p>
+                    <h3 data-aos="fade-left" data-aos-duration="1000" className="font-semibold text-slate-600 text-lg">Challenges:</h3>
+                    <p data-aos="fade-left" data-aos-duration="1000" className='text-slate-600'>{project.challenges}</p>
                 </div>
 
                 <div className="mb-4">
-                    <h3 data-aos="fade-left" data-aos-duration="1000" className="font-semibold text-lg">Future Plans:</h3>
-                    <p data-aos="fade-left" data-aos-duration="1000">{project.futurePlans}</p>
+                    <h3 data-aos="fade-left" data-aos-duration="1000" className="font-semibold text-slate-600 text-lg">Future Plans:</h3>
+                    <p data-aos="fade-left" data-aos-duration="1000" className='text-slate-600'>{project.futurePlans}</p>
                 </div>
 
                 <div className="flex gap-4 mt-6">
